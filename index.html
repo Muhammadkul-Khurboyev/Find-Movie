@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <main class="">
+    <section class="relative h-screen overflow-hidden">
+      <header class="z-10">
+        <div class="container mx-auto px-5">
+          <div class="flex items-center justify-between">
+            <a href="/">
+              <img class="w-[105px] h-auto rounded-xl bg-transparent" src="./images/siteLogo.svg" alt="Site Logotip">
+            </a>
+            <nav class="">
+              <ul class="flex items-center gap-x-[95px] text-white">
+                <li class="">
+                  <a class="bg-transparent font-mono font-semibold text-[24px] transform hover:shadow-xl hover:shadow-blue-500 transition" href="#">Home</a>
+                </li>
+                <li class="">
+                  <a class="font-mono font-semibold text-[24px] transform hover:shadow-xl hover:shadow-blue-500 transition" href="#">New Movies</a>
+                </li>
+                <li class="">
+                  <a class="font-mono font-semibold text-[24px] transform hover:shadow-xl hover:shadow-blue-500 transition" href="#">Careers</a>
+                </li>
+                <li class="">
+                  <a class="font-mono font-semibold text-[24px] transform hover:shadow-xl hover:shadow-blue-500 transition" href="#">Contact</a>
+                </li>
+                <li class="">
+                  <a class="font-sans font-semibold text-[24px] transform hover:shadow-xl hover:shadow-blue-500 transition" href="#">About me</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- Video fon -->
+      <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+        <source src="https://videos.pexels.com/video-files/3007534/3007534-uhd_2560_1440_30fps.mp4" type="video/mp4">
+        Sizning brauzeringiz ushbu videoni qo'llab-quvvatlamaydi.
+      </video>
+
+      <div class="container mx-auto px-5">
+        <div class="w-[700px]">
+          <h2 class="text-white text-[56px] font-mono font-bold">
+            New Movies
+          </h2>
+          <p class="text-white text-[20px] mb-[60px]">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veniam cumque, mollitia inventore dolor voluptate atque possimus in dolorum delectus. Voluptas, quisquam impedit! Et nam quidem voluptatibus, tenetur, nostrum in reiciendis aspernatur, totam qui ut excepturi! Minus accusantium similique ducimus! Magni harum rem dicta a, adipisci facere. Minus, sit nulla!
+          </p>
+        </div>
+        <form action="#" method="post" class="flex items-center justify-center pt-[30px] film-form">
+          <input type="text" placeholder="Enter movie name" required class="input-js py-3 ps-4 pe-36 rounded-[20px]">
+        </form>
+      </div>
+    </section>
+    <section class="bg-[#292e33] py-10 ">
+      <div class="container mx-auto px-5">
+        <h1 class="text-center text-white text-3xl">
+          Movies List
+        </h1>
+        <ul class="movie-list flex items-center justify-between flex-wrap py-10 gap-y-4"></ul>
+      </div>
+    </section>
+
+
+    <template>
+      <li class="movie-item p-4 border border-white rounded-2xl">
+        <img class="movie-img rounded-lg h-[420px] w-[300px]" src="" alt="">
+        <h3 class="movie-name text-[#12f7ff] text-center py-4 text-xl"></h3>
+        <span class="movie-year text-center text-white"></span>
+      </li>
+    </template>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>
